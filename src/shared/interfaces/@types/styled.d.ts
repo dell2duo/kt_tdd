@@ -1,5 +1,5 @@
 import 'styled-components/native';
-import { theme } from '../theme/theme';
+import { theme } from '../../theme/theme';
 
 declare module 'styled-components/native' {
   export interface DefaultTheme {

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { TextInput } from 'react-native';
+import { TextInput, TextInputProps } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import { theme } from '../../theme/theme';
 
@@ -11,7 +11,7 @@ interface IInputProps {
   placeholder: string;
 }
 
-const Input: React.FC<IInputProps> = props => {
+const Input: React.FC<IInputProps & TextInputProps> = props => {
   const inputRef = useRef<TextInput>();
 
   const focusOnInput = () => {
