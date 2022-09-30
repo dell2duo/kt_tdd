@@ -5,13 +5,7 @@ import { theme } from '../../theme/theme';
 
 import { Container, InputSC } from './Input.styled';
 
-interface IInputProps {
-  value: string;
-  onChangeText: (value: string) => void;
-  placeholder: string;
-}
-
-const Input: React.FC<IInputProps & TextInputProps> = props => {
+const Input: React.FC<TextInputProps> = props => {
   const inputRef = useRef<TextInput>();
 
   const focusOnInput = () => {
